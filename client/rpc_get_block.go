@@ -22,7 +22,7 @@ func (c GetBlockConfig) toRpc() rpc.GetBlockConfig {
 		Commitment:                     c.Commitment,
 		TransactionDetails:             c.TransactionDetails,
 		Rewards:                        c.Rewards,
-		Encoding:                       rpc.GetBlockConfigEncodingBase64,
+		Encoding:                       rpc.GetBlockConfigEncodingJsonParsed,
 		MaxSupportedTransactionVersion: pointer.Get[uint8](0),
 	}
 }
